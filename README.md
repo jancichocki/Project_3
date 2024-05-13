@@ -28,8 +28,6 @@ The Voting Token System is a blockchain-based voting system that leverages the p
 ### Prerequisites
 Before you begin, ensure you have the following installed:
 - Node.js and npm
-- Truffle Suite
-- Ganache (for a personal blockchain)
 - Python 3.8 or higher
 - Streamlit
 
@@ -37,9 +35,7 @@ Before you begin, ensure you have the following installed:
 Follow these steps to set up the smart contract:
 1. Clone the repository: `git clone <repository_url>`
 2. Navigate into the project directory: `cd <project_directory>`
-3. Install Truffle: `npm install -g truffle`
-4. Compile the smart contract: `truffle compile`
-5. Start Ganache and migrate the contract: `truffle migrate`
+3. Compile the smart contract using Remix IDE.
 
 ### Setting Up the Python Environment
 Follow these steps to set up the Python environment:
@@ -53,9 +49,3 @@ Here's how to use the system:
 - **Delegate Votes**: Provide the token ID and the delegate's address to transfer voting rights.
 - **Cast Votes**: Select a token ID and vote choice, then submit your vote.
 - **View Proposals**: Enter a token ID to retrieve detailed information about the proposal.
-
-## Project Structure
-- `contracts/`: Contains the Solidity smart contracts.
-- `migrations/`: Contains Truffle migration scripts for deploying contracts.
-- `app.py`: Contains the Streamlit frontend application.
-- `utils/`: Contains helper scripts and utility functions.
