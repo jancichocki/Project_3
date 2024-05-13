@@ -5,27 +5,28 @@
 - Betrand Badinga
 - Krashawn Rey-el
 
-## Project Overview
-This project implements a blockchain-based voting system using Ethereum smart contracts and a Python Streamlit frontend application. It leverages the ERC721 token standard to create unique voting tokens that represent voting power for stock proxy decisions. Each token is linked to a specific proposal, allowing token holders to cast votes on corporate decisions.
+## Introduction
+The Voting Token System is a blockchain-based voting system that leverages the power of Ethereum smart contracts and Python's Streamlit library to create a user-friendly frontend application. This system uses the ERC721 token standard to mint unique voting tokens that represent voting power for stock proxy decisions. Each token is linked to a specific proposal, allowing token holders to cast votes on corporate decisions.
 
 ## Features
-- **Token Minting**: Users can mint unique voting tokens associated with specific proposals.
-- **Delegation**: Token holders can delegate their voting rights to another address.
-- **Voting**: Token holders or their delegates can cast votes on proposals.
-- **Real-time Data**: Integrates real-time stock data fetching to inform users about the current financial status of the company involved in the proposals.
-- **Transparent Tracking**: All votes and proposals are tracked transparently on the Ethereum blockchain.
+- **Token Minting**: This feature allows users to mint unique voting tokens associated with specific proposals. Each token represents a vote that can be cast for the proposal it is associated with.
+- **Delegation**: Token holders have the ability to delegate their voting rights to another address. This allows for flexibility in decision-making and the potential for proxy voting.
+- **Voting**: Token holders or their delegates can cast votes on proposals. This is the core functionality of the system.
+- **Real-time Data**: The system integrates real-time stock data fetching to inform users about the current financial status of the company involved in the proposals. This helps users make informed decisions when voting.
+- **Transparent Tracking**: All votes and proposals are tracked transparently on the Ethereum blockchain. This ensures the integrity and verifiability of the voting process.
 
 ## Technical Stack
-- **Solidity**: Smart contract development for the ERC721 voting tokens.
-- **OpenZeppelin**: Utilized for secure contract standards.
-- **Ethereum Blockchain**: Deployment of smart contracts.
-- **Python**: Backend logic and interaction with the smart contract.
-- **Streamlit**: Frontend application to interact with the system.
-- **Financial Modeling Prep API**: Fetches real-time stock data.
+- **Solidity**: Used for smart contract development for the ERC721 voting tokens.
+- **OpenZeppelin**: A library for secure smart contract development. Utilized for secure contract standards.
+- **Ethereum Blockchain**: The platform for deployment of the smart contracts.
+- **Python**: Used for backend logic and interaction with the smart contract.
+- **Streamlit**: A Python library used for creating the frontend application to interact with the system.
+- **Financial Modeling Prep API**: An API service that fetches real-time stock data.
 
 ## Installation Guide
 
 ### Prerequisites
+Before you begin, ensure you have the following installed:
 - Node.js and npm
 - Truffle Suite
 - Ganache (for a personal blockchain)
@@ -33,18 +34,21 @@ This project implements a blockchain-based voting system using Ethereum smart co
 - Streamlit
 
 ### Setting Up the Smart Contract
-1. Clone the repository:
-2. Navigate into the project directory:
-3. Install Truffle:
-4. Compile the smart contract:
-5. Start Ganache and migrate the contract:
+Follow these steps to set up the smart contract:
+1. Clone the repository: `git clone <repository_url>`
+2. Navigate into the project directory: `cd <project_directory>`
+3. Install Truffle: `npm install -g truffle`
+4. Compile the smart contract: `truffle compile`
+5. Start Ganache and migrate the contract: `truffle migrate`
 
 ### Setting Up the Python Environment
-1. Install required Python packages:
-2. Set environment variables in a `.env` file:
-3. Run the Streamlit application:
+Follow these steps to set up the Python environment:
+1. Install required Python packages: `pip install -r requirements.txt`
+2. Set environment variables in a `.env` file: `cp .env.example .env` and fill in the necessary details.
+3. Run the Streamlit application: `streamlit run app.py`
 
 ## Usage
+Here's how to use the system:
 - **Mint Tokens**: Navigate to the Mint section in the Streamlit app, enter the proposal details, and click "Mint".
 - **Delegate Votes**: Provide the token ID and the delegate's address to transfer voting rights.
 - **Cast Votes**: Select a token ID and vote choice, then submit your vote.
@@ -52,6 +56,6 @@ This project implements a blockchain-based voting system using Ethereum smart co
 
 ## Project Structure
 - `contracts/`: Contains the Solidity smart contracts.
-- `migrations/`: Truffle migration scripts for deploying contracts.
-- `app.py`: Streamlit frontend application.
-- `utils/`: Helper scripts and utility functions.
+- `migrations/`: Contains Truffle migration scripts for deploying contracts.
+- `app.py`: Contains the Streamlit frontend application.
+- `utils/`: Contains helper scripts and utility functions.
