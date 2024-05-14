@@ -3,7 +3,7 @@
 ## Authors
 - Jan Cichocki
 - Betrand Badinga
-- Krashawn Rey-el
+- Krashawn Ray-El
 
 ## Introduction
 The Voting Token System is a blockchain-based voting system that leverages the power of Ethereum smart contracts and Python's Streamlit library to create a user-friendly frontend application. This system uses the ERC721 token standard to mint unique voting tokens that represent voting power for stock proxy decisions. Each token is linked to a specific proposal, allowing token holders to cast votes on corporate decisions.
